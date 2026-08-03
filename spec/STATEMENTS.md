@@ -1,0 +1,58 @@
+# Statements
+
+## Basic statements
+
+Basic statements in SIMPLE must be on one line, and are not terminated with any character (or could be said to be terminated with a newline character).
+
+For instance, the following code snippet instantiates the integer `my_integer` with value 5, adds 5 to it, then prints it to the terminal where the code is being run:
+
+```
+Create Integer my_integer with value 5
+Set my_integer to my_integer + 5
+Display my_integer
+```
+
+This code, when run, will print the following to the terminal:
+
+`my_integer = 10`
+
+## Variable declaration
+
+All variables not explicitly declared otherwise are mutable.
+
+The following code snippet instantiates an integer variable `my_integer` with value 6:
+
+`Create Integer my_integer with value 6`
+
+By default, integers declared without a value must by default be assigned the value 0.
+
+### Conditional statements
+
+Conditional statements have the following structure:
+
+```
+If foo Equals 7 then {
+    Display "foo equals 7"
+} otherwise {
+    Display "foo does not equal 7"
+}
+```
+
+Curly braces are required around block statements in conditionals. The style above is recommended but not required.
+
+### Iteration
+
+SIMPLE only supports `while` statements.
+
+The following code snippet iterates a counter from 0 to 10, then prints the final value.
+
+```
+Create Integer counter with value 0
+While (counter Equals 10) is False {
+    Set counter to counter + 1
+}
+Display counter
+Display "counter should be equal to 10"
+```
+
+The `is True/False` section of the while statement is optional; by default, assume `is True` if this section is absent.

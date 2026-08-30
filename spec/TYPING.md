@@ -31,3 +31,9 @@ True or False.
 ## `List<T>`
 
 `List<T>` is a dynamic array of any type `T`, which can of course include `List<T>` itself. As for `Text`, any implementation-specific terminator is not to be exposed to the user when, say, iterating through a `List`.
+
+## Nothing
+
+Nothing is broadly equivalent to the `void` type in C. It is generally intended for the return value of a function that does not return a meaningful value, though a variable can be declared as Nothing.
+
+A variable declared as Nothing cannot be declared with a value (save the output of a function returning Nothing), and the only operator defined on Nothing is that it `Equals` all other variables that are Nothing. There is no type coercion to or from Nothing; it is not intended for any meaningful use.

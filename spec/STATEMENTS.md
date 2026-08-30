@@ -26,7 +26,7 @@ The following code snippet instantiates an integer variable `my_integer` with va
 
 By default, integers declared without a value must by default be assigned the value 0.
 
-### Conditional statements
+## Conditional statements
 
 Conditional statements have the following structure:
 
@@ -40,7 +40,7 @@ If foo Equals 7 then {
 
 Curly braces are required around block statements in conditionals. The style above is recommended but not required.
 
-### Iteration
+## Iteration
 
 SIMPLE only supports `while` statements.
 
@@ -56,3 +56,15 @@ Display "counter should be equal to 10"
 ```
 
 The `is True/False` section of the while statement is optional; by default, assume `is True` if this section is absent.
+
+## List access
+
+Accesses to out of bounds in a list is undefined behaviour.
+
+A list with contents `[0, 1, 2, 3]` is zero-indexed and can be accessed as follows:
+
+```
+Create List<Integer> my_list with value [0, 1, 2, 3]
+Display my_list[0]
+Display "my_list[0] should be 0"
+```

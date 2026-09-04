@@ -68,3 +68,20 @@ Create List<Integer> my_list with value [0, 1, 2, 3]
 Display my_list[0]
 Display "my_list[0] should be 0"
 ```
+
+## Function execution
+
+To execute a function without using its return value, the following syntax can be used:
+
+```
+Function print_one takes (Integer x) returns Integer {
+    Display 1
+    Return 0
+}
+
+Create Integer foo with value 7
+
+Run print_one(foo)
+```
+
+`Run` throws away the return value of the function, while still making all the other expected changes to program state by otherwise running the function and storing the return value.

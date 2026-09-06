@@ -85,3 +85,9 @@ Run print_one(foo)
 ```
 
 `Run` throws away the return value of the function, while still making all the other expected changes to program state by otherwise running the function and storing the return value.
+
+## Statements and variables
+
+Variables can be created in any scope, and will not be available in any scope not descended from that scope (save in subroutines when not passed as an argument).
+
+Variables declared in an ancestor scope can be edited in a descendant scope emerging from an `If` or `While` statement in such a way that the ancestor scope will be affected.
